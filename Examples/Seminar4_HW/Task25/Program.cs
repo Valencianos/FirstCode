@@ -15,3 +15,19 @@ while (count <= B)
     count++;
 }
 Console.WriteLine(res);
+
+int Pow(num1, num2)
+{
+    int count = 2;
+    int res = num1;
+
+    while (count <= num2)
+    {
+        res *= num1;
+        count++;
+    }
+    Console.WriteLine(res);
+}
+
+int num = Pow(3, 9);
+Console.WriteLine(num);
