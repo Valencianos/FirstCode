@@ -2,21 +2,7 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-Console.Write("Enter number A: ");
-int A = Convert.ToInt32(Console.ReadLine());
-Console.Write("Enter number B: ");
-int B = Convert.ToInt32(Console.ReadLine());
-int count = 2;
-int res = A;
-
-while (count <= B)
-{
-    res *= A;
-    count++;
-}
-Console.WriteLine(res);
-
-int Pow(num1, num2)
+int Pow(int num1, int num2)
 {
     int count = 2;
     int res = num1;
@@ -26,8 +12,12 @@ int Pow(num1, num2)
         res *= num1;
         count++;
     }
-    Console.WriteLine(res);
+    return res;
 }
 
-int num = Pow(3, 9);
+Console.Write("Enter number A: ");
+int A = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter number B: ");
+int B = Convert.ToInt32(Console.ReadLine());
+int num = Pow(A, B);
 Console.WriteLine(num);

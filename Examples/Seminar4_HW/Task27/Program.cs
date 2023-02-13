@@ -5,12 +5,10 @@
 
 Console.Write("Enter number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int i = 1;
 int res = 0;
 while (num > 0)
 {
     res = res + (num % 10);
     num = num / 10;
-    i++;
 }
 Console.WriteLine(res);
